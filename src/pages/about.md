@@ -12,5 +12,10 @@ title: "Обо мне и блоге"
 
 Если вы оказались здесь впервые, начните с первой записи: «[О чём будут эти заметки](/posts/hello-world/)».
 
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+## Обратная связь
+
+Вы можете быстро связаться с автором используя функцию сообщений в [Telegram канале с анонсами](https://t.me/notkifyi).
+
+## Благодарности
+
+Спасибо автору темплейта [Astro Paper](https://astro-paper.pages.dev/) за дизайн и возможность быстро создать блог.
