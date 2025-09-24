@@ -28,25 +28,25 @@ export const SOCIALS: SocialObjects = [
     name: "Github",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: ` ${SITE.title} on Github`,
-    active: true,
+    active: false,
   },
   {
     name: "Facebook",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Facebook`,
-    active: true,
+    active: false,
   },
   {
     name: "Instagram",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on Instagram`,
-    active: true,
+    active: false,
   },
   {
     name: "LinkedIn",
     href: "https://github.com/satnaing/astro-paper",
     linkTitle: `${SITE.title} on LinkedIn`,
-    active: true,
+    active: false,
   },
   {
     name: "Mail",
@@ -134,9 +134,9 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Telegram",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://t.me/notkifyi",
     linkTitle: `${SITE.title} on Telegram`,
-    active: false,
+    active: true,
   },
   {
     name: "Mastodon",
