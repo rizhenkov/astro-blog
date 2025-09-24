@@ -1,36 +1,16 @@
 ---
 layout: ../layouts/AboutLayout.astro
-title: "About"
+title: "Обо мне и блоге"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
+Привет, я пишу под псевдонимом **Ariston Żabkou**.
+Это мой способ немного разделить личное и публичное, но при этом делиться реальными историями. Возможно, кто-то узнает меня по самим постам или просто потому, что я лично поделился ссылкой на блог — но это не повод подписываться везде настоящим именем.
 
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
+Я айтишник из Беларуси, переехавший в Польшу. Вроде бы история типичная, но в деталях она своя: от первых трёх польских слов до ипотеки, судов с управляющей компанией и ремонта с криминальными поворотами.
 
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
+Этот блог — не инструкция для переезжающих, а скорее блокнот на полях. Здесь заметки о повседневности: бюрократия, банки, машина, язык, соседи и привычки, которые делают жизнь в новой стране иной.
 
-<div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
-</div>
-
-## Tech Stack
-
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
-
-## Features
-
-Here are certain features of this site.
-
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
+Если вы оказались здесь впервые, начните с первой записи: «[О чём будут эти заметки](/posts/hello-world/)».
 
 If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
 Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
