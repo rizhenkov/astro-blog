@@ -5,15 +5,15 @@ export const SITE: Site = {
   author: "Ariston Ryżabkou",
   desc: "Заметки о повседневности и переменах",
   title: "Нотки на полях",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "ariston-og-standard.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
 export const LOCALE = {
-  lang: "en", // html lang code. Set this empty and default will be "en"
-  langTag: ["en-EN"], // BCP 47 Language Tags. Set this empty [] to use the environment default
+  lang: "ru", // html lang code. Set this empty and default will be "en"
+  langTag: ["ru-BY"], // BCP 47 Language Tags. Set this empty [] to use the environment default
 } as const;
 
 export const LOGO_IMAGE = {
