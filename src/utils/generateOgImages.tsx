@@ -3,19 +3,19 @@ import { Resvg } from "@resvg/resvg-js";
 import { type CollectionEntry } from "astro:content";
 import postOgImage from "./og-templates/post";
 import siteOgImage from "./og-templates/site";
+import * as path from "node:path";
+import * as fs from "node:fs";
 
 const fetchFonts = async () => {
   // Regular Font
-  const fontFileRegular = await fetch(
-    "https://www.1001fonts.com/download/font/ibm-plex-mono.regular.ttf"
+  const fontRegularPath = path.resolve(
+    "src/assets/fonts/ibm-plex-mono.regular.ttf"
   );
-  const fontRegular: ArrayBuffer = await fontFileRegular.arrayBuffer();
+  const fontRegular: ArrayBuffer = fs.readFileSync(fontRegularPath).buffer;
 
   // Bold Font
-  const fontFileBold = await fetch(
-    "https://www.1001fonts.com/download/font/ibm-plex-mono.bold.ttf"
-  );
-  const fontBold: ArrayBuffer = await fontFileBold.arrayBuffer();
+  const fontBoldPath = path.resolve("src/assets/fonts/ibm-plex-mono.bold.ttf");
+  const fontBold: ArrayBuffer = fs.readFileSync(fontBoldPath).buffer;
 
   return { fontRegular, fontBold };
 };
