@@ -1,17 +1,24 @@
-import type { APIRoute } from "astro";
-import { SITE } from "@config";
+import type { APIRoute } from 'astro'
+import { base } from '@/config'
 
-const robots = `
-User-agent: Googlebot
-Disallow: /nogooglebot/
+export const GET: APIRoute = ({ site }) => {
+  const sitemapURL = new URL('sitemap-index.xml', site)
 
-User-agent: *
-Allow: /
+  const robotsTxt = [
+    'User-agent: *',
+    'Allow: /',
+    `Disallow: ${base}/_astro/`,
+    `Disallow: ${base}/feeds/`,
+    `Disallow: ${base}/giscus/`,
+    `Disallow: ${base}/og/`,
+    `Disallow: ${base}/~partytown/`,
+    '',
+    `Sitemap: ${sitemapURL.href}`,
+  ].join('\n')
 
-Sitemap: ${new URL("sitemap-index.xml", SITE.website).href}
-`.trim();
-
-export const GET: APIRoute = () =>
-  new Response(robots, {
-    headers: { "Content-Type": "text/plain" },
-  });
+  return new Response(robotsTxt, {
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+    },
+  })
+}
