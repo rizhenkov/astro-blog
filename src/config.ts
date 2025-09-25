@@ -7,7 +7,7 @@ export const SITE: Site = {
   title: "Нотки на полях",
   ogImage: "ariston-og-standard.jpg",
   lightAndDarkMode: true,
-  postPerPage: 3,
+  postPerPage: 4,
   scheduledPostMargin: 15 * 60 * 1000, // 15 minutes
 };
 
